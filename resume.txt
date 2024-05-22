@@ -11,3 +11,7 @@ Concat (+) pada String
 INCREMENT (++) & DECREMENT (--)
 
 Modify In Place (+= , -= , *= , /=)
+
+Comparation Operators
+> , < , >= , <= , == , === , != , !==
+Hasil --> Boolean (true/false)
