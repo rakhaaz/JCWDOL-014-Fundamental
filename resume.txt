@@ -1,1 +1,13 @@
 menampilkan terminal --> CTRL + J
+bikin variabel
+mengedit kata yang sama bersamaan --> CTRL + D
+
+methods pada string
+
+Operator (+ , - , * , / , %)
+
+Concat (+) pada String
+
+INCREMENT (++) & DECREMENT (--)
+
+Modify In Place (+= , -= , *= , /=)
