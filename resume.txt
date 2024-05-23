@@ -1,1 +1,9 @@
 Git <--> Github
+step dari Git --> Github
+- clone
+- masuk folder hasil clone + copy semua file ke folder tsb
+- git remote
+- bikin branch baru + checkout kesana
+- git add . 
+- git commit -m "... "
+- git push <namaRepoDiGit> <namaBranchTujuan>
