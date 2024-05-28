@@ -1,27 +1,12 @@
-// //triangle
-// let segitiga = function (tinggi){
+//arr --> remove odd number
+let arr = [1,2,3,4,5,6,7,8,9,10]
+let arrBaru = []
 
-// let bentuk = ''
-
-// for (let x = 1; x<=tinggi ; x++){
-//     for (let y = 1 ;y<=x; y++){
-//         bentuk += y
-//     }
-//     bentuk += "\n"
-
-// }return bentuk
-// }
-
-// console.log(segitiga(5));
-
-//find maximum value in a array
-let arr = [10, 55, 79, 32]
-let max = arr[0]
-
-arr.forEach (function(e,i){
-    if(arr[i] > max){
-        max = arr[i]
+arr.forEach (function(i, e){
+    if (e%2 == 0){
+        arrBaru.push (arr[i]) 
     }
-    }
-) 
-console.log(max);
+}
+)
+
+console.log(arrBaru);

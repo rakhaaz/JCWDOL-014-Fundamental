@@ -1,56 +1,92 @@
-//triangle
-let segitiga = function (tinggi){
+// //triangle
+// let segitiga = function (tinggi){
 
-    let bentuk = ''
+//     let bentuk = ''
     
-    for (let x = 1; x<=tinggi ; x++){
-        for (let y = 1 ;y<=x; y++){
-            bentuk += y
-        }
-        bentuk += "\n"
+//     for (let x = 1; x<=tinggi ; x++){
+//         for (let y = 1 ;y<=x; y++){
+//             bentuk += y
+//         }
+//         bentuk += "\n"
     
-    }return bentuk
-    }
-    
-    console.log(segitiga(5));
-
-//2
-//find maximum value in a array
-let arr = [10, 55, 79, 32]
-let max = arr[0]
-
-arr.forEach (function(e,i){
-    if(arr[i] > max){
-        max = arr[i]
-    }
-    }
-) 
-console.log(max);
-
-// 2
-// let x
-// let hasil = ""
-
-// let gantiNama = function (nomor) {
-//     for (x=1;x<=nomor;x++){
-//         if (x%3 == 0 && x%5 == 0) {
-//            hasil += "FizzBuzz";
-//         }
-//         else if (x%3 == 0){
-//             hasil += "Fizz";
-//         }
-//         else if (x%5 == 0){
-//            hasil += "Buzz";
-//         }
-//         else {
-//             hasil += (x);
-//         }
-       
+//     }return bentuk
 //     }
-//     return hasil
+    
+//     console.log(segitiga(5));
+
+// //2
+// //find maximum value in a array
+// let arr = [10, 55, 79, 32]
+// let max = arr[0]
+
+// arr.forEach (function(e,i){
+//     if(arr[i] > max){
+//         max = arr[i]
+//     }
+//     }
+// ) 
+// console.log(max);
+
+// // 3
+// //segitiga angka
+// let k =1
+// let i =1
+// let bentuk = ""
+// let segitiga = function (baris) {
+//     for (i;i<=baris;i++){
+//         for (let j = 1 ;j<=i; j++){
+//             bentuk += k
+//             k++
+//         }
+//         bentuk += "\n"
+//     }
+//     return bentuk
 // }
 
-// console.log(gantiNama(15));
+// console.log(segitiga(4));
+
+// //fizzbuzz
+// let jejeran = ''
+// let fb = function (jmlAng) {
+//     for (let a =1 ; a <= jmlAng; a++){
+//         if (a%3==0 && a%5==0){
+//             if (a == jmlAng){
+//                 jajaran += "FizzBuzz"
+//             }
+//             else {
+//             jejeran += "FizzBuzz, "
+//             }
+//         }
+//         else if (a%3 == 0) {
+//             if (a == jmlAng) {
+//                 jejeran += "Fizz"
+//             }
+//             else{
+//                 jejeran += "Fizz, "
+//             }
+//         }
+//         else if (a%5 == 0) {
+//             if (a == jmlAng){
+//                 jejeran += "Buzz"
+//             }
+//             else {
+//                 jejeran += "Buzz, "
+//             }
+//         }
+//         else {
+//             if (a == jmlAng){
+//                 jejeran += a
+//             }
+//             else {
+//             jejeran += a + ", "
+//             }
+//         }
+//     }
+//     return jejeran
+// }
+
+// console.log(fb(17));
+
 
 // //3 BMI Calculator
 // let calculate
@@ -77,10 +113,15 @@ console.log(max);
 // console.log(bmi(65,1.69));
 
 
-// // //array --> remove odd numbers
-// let data = [1,2,3,4,5,6,7,8,9,10]
-// let data2 = data.filter(function (x) {
-//     return y = x%2 == 0
-// })
+//arr --> remove odd number
+let arr = [1,2,3,4,5,6,7,8,9,10]
+let arrBaru = []
 
-// console.log(data2);
+arr.forEach (function(i, e){
+    if (e%2 == 0){
+        arrBaru.push (arr[i]) 
+    }
+}
+)
+
+console.log(arrBaru);
