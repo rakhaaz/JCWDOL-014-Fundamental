@@ -14,6 +14,19 @@ let segitiga = function (tinggi){
     
     console.log(segitiga(5));
 
+//2
+//find maximum value in a array
+let arr = [10, 55, 79, 32]
+let max = arr[0]
+
+arr.forEach (function(e,i){
+    if(arr[i] > max){
+        max = arr[i]
+    }
+    }
+) 
+console.log(max);
+
 // 2
 // let x
 // let hasil = ""
