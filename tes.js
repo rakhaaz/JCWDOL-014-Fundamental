@@ -1,12 +1,7 @@
-//arr --> remove odd number
-let arr = [1,2,3,4,5,6,7,8,9,10]
-let arrBaru = []
+//Split word --> array
 
-arr.forEach (function(i, e){
-    if (e%2 == 0){
-        arrBaru.push (arr[i]) 
-    }
+let cvt = function (kata) {
+    console.log(kata.split (' '))
 }
-)
 
-console.log(arrBaru);
+cvt ("Hello World")

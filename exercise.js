@@ -29,21 +29,22 @@
 
 // // 3
 // //segitiga angka
-// let k =1
-// let i =1
-// let bentuk = ""
-// let segitiga = function (baris) {
-//     for (i;i<=baris;i++){
-//         for (let j = 1 ;j<=i; j++){
-//             bentuk += k
-//             k++
-//         }
-//         bentuk += "\n"
-//     }
-//     return bentuk
-// }
+let k =1
+let i =1
+let bentuk = ""
+let segitiga = function (baris) {
+    for (i;i<=baris;i++){
+        for (let j = 1 ;j<=i; j++){
+            
+            bentuk += k
+            k++
+        }
+        bentuk += "\n"
+    }
+    return bentuk
+}
 
-// console.log(segitiga(4));
+console.log(segitiga(4));
 
 // //fizzbuzz
 // let jejeran = ''
@@ -113,15 +114,24 @@
 // console.log(bmi(65,1.69));
 
 
-//arr --> remove odd number
-let arr = [1,2,3,4,5,6,7,8,9,10]
-let arrBaru = []
+// //arr --> remove odd number
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let arrBaru = []
 
-arr.forEach (function(i, e){
-    if (e%2 == 0){
-        arrBaru.push (arr[i]) 
-    }
-}
-)
+// arr.forEach (function(i, e){
+//     if (e%2 == 0){
+//         arrBaru.push (arr[i]) 
+//     }
+// }
+// )
 
-console.log(arrBaru);
+// console.log(arrBaru);
+
+
+// //Split word --> array
+
+// let cvt = function (kata) {
+//     console.log(kata.split (' '))
+// }
+
+// cvt ("Hello World")
