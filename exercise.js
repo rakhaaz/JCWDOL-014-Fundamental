@@ -199,3 +199,32 @@
 // Based on the array below write a function that will return primitive data types only. let
 // arr = [1, [], undefined, {}, "string", {}, []];
 // a. The function will return [1, undefined, “string”]
+
+// let tipe = function (arr) {
+//      let arrPrmitive = []
+//      for (let x =0 ; x<arr.length ; x++){
+//           if (typeof(arr[x]) !== "object"){
+//                arrPrmitive.push(arr[x])
+//           } 
+//      }
+//      return arrPrmitive
+// }
+
+// console.log(tipe([1, [], undefined, {}, "string", {}, []]));
+
+
+//12
+// Write a function from a given array of numbers and return the second smallest number
+// a. Example : numbers = [5, 3, 1, 7, 2, 6] → 2
+
+let secondSmallest = function (arr) {
+     arr.sort ()
+     arr.forEach((element, index) => {
+          if (arr[index] !== arr[index+1] || arr[index] !== arr[index-1]) {
+               return arr [1]
+          }
+          
+     });
+}
+
+console.log(secondSmallest([5, 3, 1, 7, 2, 6]));
