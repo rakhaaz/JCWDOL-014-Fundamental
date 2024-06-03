@@ -6,21 +6,24 @@
 // let sum = 0
 
 // let angka = function(){
-//     for (let i =0 ; i < arr.length ; i++) {
-//     sum += arr[i]
-//     if (arr[i]<low){
-//          low = arr[i]
+//     arr.forEach (element => {
+//     sum += element
+//     if (element<low){
+//          low = element
 //     }
-//     if (arr[i]>hi){
-//          hi = arr[i]
+//     if (element>hi){
+//          hi = element
 //     }
-// }
+// })
+// return low, hi
 // }
 
 // angka()
 // avg = sum / arr.length
 
 // console.log("minimum: "+ low+" maksimum: "+ hi+" average: "+avg);
+
+//-----------------------------------------------------------------------------------------------------------
 
 // //2 - array sepate by comma and "and" at the end
 // Write a function that takes an array of words and returns a string by concatenating the words in the array,
@@ -43,6 +46,8 @@
 
 // console.log (gabung (["apple", "banana", "cherry", "date", "pear"] ))
 
+//-------------------------------------------------------------------------------
+
 // 3 split a string and convert to array
 
 // a. Example : “Hello World” → [“Hello”, “World”]
@@ -52,6 +57,8 @@
 
 // console.log(str("Hello World"));
 
+//------------------------------------------------------------------
+
 // //4. sum two array
 // Assume both arrays are of the same length.
 // a. Example : [1, 2, 3] + [3, 2, 1] → [4, 4, 4]
@@ -59,17 +66,16 @@
 // let sum = []
 
 // let tambah = function (arr1, arr2) {
-//      for (let i=0 ; i<arr1.length ; i++){
-//           for (j=0 ; j<arr2.length ; j++){
-//                if (i==j){
-//                     sum.push (arr1[i] + arr2[j])
-//                }
-//           }
+//      arr1.forEach((element, index) => {
+//           sum.push (element + arr2[index])
 //      }
+// )
 //      return sum
 // }
 
 // console.log(tambah ([1, 2, 3], [3,2,1]));
+
+//-----------------------------------------------------------------------------------------------------------------
 
 // 5. 
 // Write a function that adds an element to the end of an array. However, the element should only be added if it is
@@ -84,6 +90,8 @@
 // }
 // console.log(nambah([1, 2, 3, 4] , 10));
 
+//--------------------------------------------------------------------------------------------------------------
+
 
 //6
 // Write a function to remove all odd numbers in an array and return a new array that contains even numbers only
@@ -97,6 +105,8 @@
 
 
 // console.log(nmb);
+
+//----------------------------------------------------------------------------------------------------------------
 
 
 //7
@@ -119,6 +129,8 @@
 
 // console.log(jadiArr("5, 10, 24, 3, 6, 7, 8", 3));
 
+//----------------------------------------------------------------------
+
 
 //8
 // Write a function that will combine 2 given array into one array
@@ -133,6 +145,7 @@
 
 // console.log(gabung ([1,2,3],[4,5,6]));
 
+//-----------------------------------------------------------
 
 //9
 // Write a function to find duplicate values in an array
@@ -174,6 +187,8 @@
  
 //  console.log(FindDuplicate([1, 2, 2, 2, 3, 3, 4, 5, 5, 6, 6, 6, 6]))
 
+//-------------------------------------------------------------------------------
+
 
 // //10
 // // Write a function to find the difference in 2 given array
@@ -195,6 +210,8 @@
 
 // console.log(findDifferent([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
 
+//-----------------------------------------------------------------------------------------------
+
 //11
 // Based on the array below write a function that will return primitive data types only. let
 // arr = [1, [], undefined, {}, "string", {}, []];
@@ -212,19 +229,135 @@
 
 // console.log(tipe([1, [], undefined, {}, "string", {}, []]));
 
+//------------------------------------------------------------------------------------
+
 
 //12
 // Write a function from a given array of numbers and return the second smallest number
 // a. Example : numbers = [5, 3, 1, 7, 2, 6] → 2
 
-let secondSmallest = function (arr) {
-     arr.sort ()
-     arr.forEach((element, index) => {
-          if (arr[index] !== arr[index+1] || arr[index] !== arr[index-1]) {
-               return arr [1]
-          }
-          
-     });
+
+// let secondSmallest = function (arr) {
+//      arr.sort ()
+   
+//      return arr[1]
+// }
+
+// console.log(secondSmallest([5, 3, 1, 7, 2, 6]));
+
+//---------------------------------------------------------------------------------------------
+
+//13
+// Write a function from a given array of mixed data types and return the sum of all the number
+// a. Example : mixedArray = ["3", 1, "string", null, false, undefined, 2] → 3
+
+// let mixedArray = (arr) => {
+//      let sum = 0
+//      arr.forEach(element => {
+//         if (typeof(element) == "number") {
+//           sum += element
+//         }  
+//      });
+//      return sum
+// }
+
+// console.log(mixedArray(["3", 5, "string", null, false, undefined, 7]));
+
+//-------------------------------------------------------------------------------------------------
+
+//14
+/* Write a function from the below array of number that will return sum of duplicate values. let
+arr = [10, 20, 40, 10, 50, 30, 10, 60, 10];
+a. The function will return 4 */
+
+// let sumOfDuplicate = (arr) => {
+//      arr.sort()
+//      let sum = 0
+//      let arrDuplicate = []
+//      arr.forEach((element,index) => {
+//           if (element == arr[index+1]){
+//                arrDuplicate.push (element)
+//                sum += element
+//           }
+//           if (element == arr[index-1] && element !== arr[index+1]) {
+//                arrDuplicate.push (element)
+//                sum += element
+//           }
+//      });
+//      return sum
+// }
+
+// console.log(sumOfDuplicate([10, 20, 40, 10, 50, 30, 10, 60, 10, 20]));
+
+//----------------------------------------------------------------------------------------------------------------
+
+//15 TERAKHIR
+/* Write a game of rock, paper, scissor function that will return 'Win' or 'Lose'. The function will randomly pick
+between rock, paper, or scissor.
+a. Example: if you throw a rock as an argument and the function pick a scissor then it will return 'Win'*/
+
+let game = (input) => {            //input user
+     if (input == "rock"){
+          input = 1
+     }
+     else if (input == "paper"){
+          input = 2
+     }
+     else {
+          input = 3
+     }
+     
+     let com = Math.random() * 10
+     let musuh
+     
+     if (com > 0 && com < 3) {          //input computer
+          musuh = 1
+     }
+     else if (com >= 3 && com <6){
+          musuh = 2
+     }
+     else {
+          musuh = 3
+     }
+
+     let result
+     if (input == musuh){                    //rock
+          result = 'Draw'
+     }
+     else if (input == 1 && musuh == 2) {
+          result = 'Lose'
+     }
+
+     else if (input == 1 && musuh == 3){
+          result = 'Win'
+     }
+
+     //paper
+
+     else if (input == 2 && musuh == 1) {
+          result = 'Win'
+     }
+
+     else if (input == 2 && musuh == 2){
+          result = 'Draw'
+     }
+
+     else if (input == 2 && musuh == 3) {
+          result = 'Lose'
+     }
+
+     //Scissor
+     else if (input == 3 && musuh == 1){
+          result = 'Lose'
+     }
+     else if (input == 3 && musuh == 2) {
+          result = 'Win'
+     }
+
+     else if (input == 3 && musuh == 3){
+          result = 'Draw'
+     }
+     return result
 }
 
-console.log(secondSmallest([5, 3, 1, 7, 2, 6]));
+console.log(game('rock'));

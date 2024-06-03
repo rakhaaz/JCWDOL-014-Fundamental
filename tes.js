@@ -2,4 +2,4 @@
 // arr = [1, [], undefined, {}, "string", {}, []];
 // a. The function will return [1, undefined, “string”]
 
-console.log(typeof({}));
+console.log(Math.random());
