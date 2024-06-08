@@ -12,17 +12,19 @@
     
         let printProduct = ''
         productsName.forEach((product, index) => {
-            printProduct += `${index+1}. ${product} \n`
+            printProduct += `${index+1}. ${product} \n` //Untuk menampilkan teks pada prompt
         })
     
-        const selectedProduct = Number(prompt(printProduct)) // Bilangan
+        const selectedProduct = Number(prompt(printProduct)) // Merubah inputan user menjadi bertipe "Number"
         // console.log(isNaN(selectedProduct))
     
         if(selectedProduct <= 0 || selectedProduct > productsName.length || isNaN(selectedProduct)){
-            alert('Product Not Found!')
+            alert('Product Not Found!')     //Jika user memasukan inputan yg tidak sesuai  //isNan = jika bukan typeData yg dihsrspksn
         }else{
             alert(`${productsName[selectedProduct-1]} = Rp.${productsPrice[selectedProduct-1].toLocaleString('id-ID')}`)
-        }
+        }   
+            // .toLocalString merupakan sebuah build-in method agar bilangan integer manjadi format mata uang tertentu.
+            // untuk kasus tersebut dari 10000 --> 10.000
     </script>
 </body>
 </html>
