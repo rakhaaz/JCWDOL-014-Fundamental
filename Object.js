@@ -15,14 +15,14 @@
 // // READ
 // console.log(objStudents.fullname.firstName) 
 // console.log(objStudents['address'])
-// objStudents['newAddress'] = objStudents['address'] //Menambah properti 'newAddress' dalam object nya
+// objStudents['newAddress'] = objStudents['address'] ////Menambah properti 'newAddress' dalam object nya
 
 // // UPDATE
 // objStudents.name = 'Ryan'
 // objStudents.school = null
 
 // // DELETE 
-// delete objStudents.school
+// delete objStudents.school ////hanya bisa menghapus properti, bukan value nya saja
 // console.log(objStudents)
 
 
