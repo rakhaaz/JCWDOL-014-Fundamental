@@ -15,7 +15,7 @@
 // // READ
 // console.log(objStudents.fullname.firstName) 
 // console.log(objStudents['address'])
-// objStudents['newAddress'] = objStudents['address']
+// objStudents['newAddress'] = objStudents['address'] //Menambah properti 'newAddress' dalam object nya
 
 // // UPDATE
 // objStudents.name = 'Ryan'
