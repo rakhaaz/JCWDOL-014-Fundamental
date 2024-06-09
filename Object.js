@@ -42,17 +42,18 @@
 
 
 
-// Chaining Condition
-const student = {
-    fullname: {
-        firstName: 'Ryan',
-        lastName: 'Defryan'
-    }
-}
+// // Chaining Condition ('?')
+// const student = {
+//     fullname: {
+//         firstName: 'Ryan',
+//         lastName: 'Defryan'
+//     }
+// }
 
-console.log(student?.fullName?.firstname) // Conditional Chaining
-console.log(student['fullname']['firstName'])
+// console.log(student?.fullName?.firstname)   //jadi "undifined", bkn "error"
+// console.log(student['fullname']['firstName'])
 
+// Object di dalam Array
 // const students = [
 //     {
 //         fullname: 'Defryan'
@@ -69,14 +70,14 @@ console.log(student['fullname']['firstName'])
 
 
 
-// // DESTRUCTURING ASSIGNMENT
-// // Mengkonversi Property Obj Menjadi Variable JS
+// DESTRUCTURING ASSIGNMENT
+// Mengkonversi Property Obj Menjadi Variable JS
 
-// const objCampusPwd = {
-//     name: 'Pwd BSD', 
-//     address: 'GOP-09'
-// }
+const objCampusPwd = {
+    name: 'Pwd BSD', 
+    address: 'GOP-09'
+}
 
-// const {address, name} = objCampusPwd
-// console.log(name)
-// console.log(address)
+const {address, name} = objCampusPwd
+console.log(name)
+console.log(address)
