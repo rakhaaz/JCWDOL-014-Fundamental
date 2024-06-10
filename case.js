@@ -13,6 +13,9 @@ class student {
     }
 }
 
-const std1 = new student ('Rakha', 'Bandung', 'JCWDOL', 'coba', '085659988596')  //jika arguments dikirimkan > yg seharusnya
-const std2 = new student ('Azmandika', 'Cikampek', 'JCDSOL', '08197454444')
-console.log(std1, std2);
+const arrStd = [
+    new student ('Rakha', 'Bandung', 'JCWDOL', 'cobs' , '085659988596'), // Jika Argument yg dikirimkan > dari parameter constructor
+    new student ('Azmandika', 'Cikampek', 'JCDSOL', '08123456789')
+]
+
+console.log(arrStd);
