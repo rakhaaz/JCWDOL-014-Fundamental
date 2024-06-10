@@ -27,8 +27,17 @@ class fashion extends jual {
         this.size = size
     }
 }
+class snack extends jual {
+    constructor (nama, harga,diskon,stock,jenis,rasa){
+        super (nama,harga,diskon,stock)
+        this.jenis = jenis
+        this.rasa = rasa
+    }
+}
 
 const jualElek = new elektronik ('LG', 'Rp. 4.000.000', '5%', 100, 'TV', 'LG154232')
 const jualFash = new fashion ('Erigo', 'Rp. 200.000', '5%', 75, 'Baju', 'M')
+const jualSnack = new snack ('Chitato', 'Rp. 1.500', '0%', 150, 'Ciki', "Cheese")
 console.log(jualElek);
 console.log(jualFash);
+console.log(jualSnack);
