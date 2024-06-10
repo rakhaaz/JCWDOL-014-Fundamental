@@ -1,4 +1,10 @@
 JavaScript class
-menggunakan keyword "extend", dan setelahnya ada "super" 
+menggunakan keyword "new" atau "extends", dan setelah "extends" ada "super" 
+
+"Closure Function" --> Function di dalam Function
+
+"ENCAPSULATION" --> Membungkus data pada satu variable/properti
 
 "SETTER" & "GETTER"
+"get" untuk mengambil properti pada object (mirip method .map pada array) yang berupa function dan menghasilkan/return sebuah value, dengan nama properti tersebut (jadi bikin function untuk properti super atau bikin properti baru dengan function).
+"set" untuk men set value/kondisi tertentu yg ada pada properti super (berupa function)
