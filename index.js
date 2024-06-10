@@ -1,5 +1,5 @@
-// //closure function
-
+// //Closure Function
+// //function di dalam function
 // function A(){
     
 //     const greeting = 'Hello';
@@ -25,10 +25,10 @@ class Users{
     }
 
     get showPassword(){
-        console.log(this.#password)
+        console.log(this.#password) //mengambil properti & menampilkan value nya dari super, meskipun berupa private property
     }
 
-    set validateEmail(email){
+    set validateEmail(email){       //memvaladasi email
         if(!email.includes('@')){
             console.log('Email Not Valid!')
         }else{
@@ -37,8 +37,8 @@ class Users{
     }
 }
 
-const userAccount1 = new Users('ryandefryan', 'abc123')
-userAccount1.validateEmail = 'ryangmail.com'
+const userAccount1 = new Users('rakha', 'abc123')
+userAccount1.validateEmail = 'rakhaaz@gmail.com'
 console.log(userAccount1)
 // console.log(userAccount1.showPassword())
 
