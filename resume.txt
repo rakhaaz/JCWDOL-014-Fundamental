@@ -1,2 +1,4 @@
 JavaScript class
+menggunakan keyword "extend", dan setelahnya ada "super" 
+
 "SETTER" & "GETTER"
