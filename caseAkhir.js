@@ -13,15 +13,14 @@ class stdPurwa {
     address;
     phoneNumber;
     programSelected;
-    constructor (name, username, address, phoneNumber){
+    constructor (name, username, address ){
         this.name = name
         this.username = username
         this.address = address
-        this.phoneNumber = phoneNumber
        }
 
-    get hidePhone () {
-        return this.phoneNumber = this.phoneNumber.slice(0,7) + "*****"
+    set hidePhone (phoneNumber) {
+        console.log(this.phoneNumber = phoneNumber.slice(0,7) + "*****")
     }
 
     
@@ -33,7 +32,7 @@ class stdPurwa {
         }
     }
     set validatePassword (password){
-        if (password<6 || password>10){
+        if (password.length<6 || password.length>10){
             console.log('Password Not Valid!');
         }
         else {this.#password = password}
@@ -44,8 +43,9 @@ class stdPurwa {
     }
 }
 
-const user1 = new stdPurwa ('Rakha', 'rakha az', 'bandung','085659988596')
+const user1 = new stdPurwa ('Rakha', 'rakhaaz', 'bandung')
 user1.validateEmail = 'rakhaaz@yahoo.com'
 user1.validatePassword = 'abcdefghijklmn'
 user1.uppercase = 'jCWdol'
+user1.hidePhone = '085659988596'
 console.log(user1);
