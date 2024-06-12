@@ -11,18 +11,16 @@ class stdPurwa {
     email;
     #password;
     address;
-    phoneNumber;
+    #phoneNumber;
     programSelected;
-    constructor (name, username, address ){
+    constructor (name, username, address, phoneNumber ){
         this.name = name
         this.username = username
         this.address = address
+        this.#phoneNumber = phoneNumber
        }
 
-    set hidePhone (phoneNumber) {
-        console.log(this.phoneNumber = phoneNumber.slice(0,7) + "*****")
-    }
-
+    
     
     set validateEmail(email){       //memvalidasi email
         if(!email.includes('@')){
@@ -44,11 +42,15 @@ class stdPurwa {
         if (pwd.includes(programSelected)){
         return this.programSelected = programSelected}
     }
+
+    get showPhoneNumber(){
+         console.log(this.#phoneNumber.slice(0, this.#phoneNumber.length-6) + '*****')
+         }
 }
 
-const user1 = new stdPurwa ('Rakha', 'rakhaaz', 'bandung')
+const user1 = new stdPurwa ('Rakha', 'rakhaaz', 'bandung', '085659988596')
 user1.validateEmail = 'rakhaaz@yahoo.com'
 user1.validatePassword = 'abcdefghijklmn'
 user1.uppercase = 'jCWdol'
-user1.hidePhone = '085659988596'
+user1.showPhoneNumber
 console.log(user1);
