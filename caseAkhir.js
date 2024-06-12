@@ -39,7 +39,10 @@ class stdPurwa {
     }
 
     set uppercase(programSelected){
-        return this.programSelected = programSelected.toUpperCase()
+        const pwd = ['JCWDOL', 'JCDSOL', 'JCUI/UX', 'JCDM', 'JCVD']
+        programSelected = programSelected.toUpperCase()
+        if (pwd.includes(programSelected)){
+        return this.programSelected = programSelected}
     }
 }
 
